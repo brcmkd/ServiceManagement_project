@@ -31,7 +31,9 @@ public void verifyAddReperationDetails() throws IOException, AWTException, Inter
 	 addreperationdata.addClient(ExcelUtility.getString(1, 25,System.getProperty("user.dir") + "constants.Constant.TESTDATAFILE", "testSheet"));
 	 addreperationdata.addTax(ExcelUtility.getString(1, 26,System.getProperty("user.dir") + "constants.Constant.TESTDATAFILE", "testSheet"));
 	 addreperationdata.addCategory(ExcelUtility.getString(1, 27,System.getProperty("user.dir") + "constants.Constant.TESTDATAFILE", "testSheet"));
-				
-	 addreperationdata.uploadImg();
+	 addreperationdata.model(ExcelUtility.getString(1, 28,System.getProperty("user.dir") + "constants.Constant.TESTDATAFILE", "testSheet"));
+	 addreperationdata.addItem(ExcelUtility.getString(1, 29,System.getProperty("user.dir") + "constants.Constant.TESTDATAFILE", "testSheet"));
+	 addreperationdata.addPurDate(ExcelUtility.getString(1, 30,System.getProperty("user.dir") + "constants.Constant.TESTDATAFILE", "testSheet"));
+	addreperationdata.uploadImg();
 	 
 }}

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\MIS BRC MKD\git\ServiceManagement_projects\ServiceManagement_project\testng.xml</span>
+                    <span>C:\Users\MIS BRC MKD\git\ServiceManagement_project\ServiceManagement_project\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.testscripts.InventoryProductTest" class="method navigator-link" hash-for-method="deleteInventoryProducts">deleteInventoryProducts</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.qa.testscripts.LogoutTest" class="method navigator-link" hash-for-method="logoutTestPage">logoutTestPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.testscripts.LogoutTest" class="method navigator-link" hash-for-method="verifyLogoutTest">verifyLogoutTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -120,17 +125,27 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.qa.testscripts.InventoryProductTest</span>
+              <span class="class-name">com.qa.testscripts.LogoutTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="deleteInventoryProducts">
-                  </a> <!-- deleteInventoryProducts -->
-                  <span class="method-name">deleteInventoryProducts</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.ss.usermodel.Cell.getStringCellValue()&quot; because &quot;c&quot; is null
-	at com.qa.utilities.ExcelUtility.getString(ExcelUtility.java:97)
-	at com.qa.testscripts.InventoryProductTest.deleteInventoryProducts(InventoryProductTest.java:25)
+                  <a name="logoutTestPage">
+                  </a> <!-- logoutTestPage -->
+                  <span class="method-name">logoutTestPage</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.qa.pages.Logout.logoutIcon()&quot; because &quot;this.log&quot; is null
+	at com.qa.testscripts.LogoutTest.logoutTestPage(LogoutTest.java:29)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogoutTest">
+                  </a> <!-- verifyLogoutTest -->
+                  <span class="method-name">verifyLogoutTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.qa.pages.Logout.logoutSuccessMsg()&quot; because &quot;this.log&quot; is null
+	at com.qa.testscripts.LogoutTest.verifyLogoutTest(LogoutTest.java:35)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -140,7 +155,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\MIS BRC MKD\git\ServiceManagement_projects\ServiceManagement_project\testng.xml</span>
+            <span class="header-content">C:\Users\MIS BRC MKD\git\ServiceManagement_project\ServiceManagement_project\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -153,7 +168,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.testscripts.InventoryProductTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.testscripts.LogoutTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -193,16 +208,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'deleteInventoryProducts')
-data.setCell(0, 2, 'com.qa.testscripts.InventoryProductTest')
-data.setCell(0, 3, 11972);
+data.setCell(0, 1, 'logoutTestPage')
+data.setCell(0, 2, 'com.qa.testscripts.LogoutTest')
+data.setCell(0, 3, 12304);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyLogoutTest')
+data.setCell(1, 2, 'com.qa.testscripts.LogoutTest')
+data.setCell(1, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -228,7 +247,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.testscripts.InventoryProductTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.testscripts.LogoutTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
@@ -236,12 +255,26 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">deleteInventoryProducts</span>
-                <span class="method-start">26691 ms</span>
+                <span class="method-name">logoutTestPage</span>
+                <span class="method-start">29162 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=deleteInventoryProducts status=FAILURE method=InventoryProductTest.deleteInventoryP...)</span>
-                <span class="method-start">38702 ms</span>
+                <span class="method-name">browserQuit([TestResult name=logoutTestPage status=FAILURE method=LogoutTest.logoutTestPage()[pri:0, instance:co...)</span>
+                <span class="method-start">41533 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(chrome)</span>
+                <span class="method-start">42302 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLogoutTest</span>
+                <span class="method-start">50761 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyLogoutTest status=FAILURE method=LogoutTest.verifyLogoutTest()[pri:0, instanc...)</span>
+                <span class="method-start">50774 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

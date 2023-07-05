@@ -7,13 +7,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qa.testscripts.InventoryProductTest">
+      <class name="com.qa.testscripts.LogoutTest">
         <methods>
           <include name="browserQuit"/>
-          <include name="deleteInventoryProducts"/>
+          <include name="verifyLogoutTest"/>
           <include name="initializeBrowser"/>
+          <include name="logoutTestPage"/>
         </methods>
-      </class> <!-- com.qa.testscripts.InventoryProductTest -->
+      </class> <!-- com.qa.testscripts.LogoutTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

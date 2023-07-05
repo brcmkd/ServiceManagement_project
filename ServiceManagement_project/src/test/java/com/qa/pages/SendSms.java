@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.qa.utilities.ExcelUtility;
 import com.qa.utilities.PageUtility;
+import com.qa.utilities.WaitUtility;
 
 public class SendSms {
 	public WebDriver driver;
@@ -37,7 +38,9 @@ public class SendSms {
 	}
 	
 	public void clickOnSendButton() {
+		WaitUtility.waitForElement(driver, sendButton);
 		page.clickOnElement(sendButton);
+		WaitUtility.waitForElement(driver, close);
 		page.clickOnElement(close);
 	}
 

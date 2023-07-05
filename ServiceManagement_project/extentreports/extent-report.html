@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"> Extent Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 3, 2023 09:03:15 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 4, 2023 10:41:22 PM</span></a>
 </li>
 </ul>
 </div>
@@ -84,9 +84,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">deleteInventoryProducts</p>
+            <p class="name">logoutTestPage</p>
             <p class="text-sm">
-              <span>9:03:43 PM</span> / <span>00:00:11:759</span>
+              <span>10:42:23 PM</span> / <span>00:00:24:340</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -94,10 +94,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">deleteInventoryProducts</h5>
-<span class='badge badge-success'>07.03.2023 9:03:43 PM</span>
-<span class='badge badge-danger'>07.03.2023 9:03:54 PM</span>
-<span class='badge badge-default'>00:00:11:759</span>
+<h5 class="test-status text-fail">logoutTestPage</h5>
+<span class='badge badge-success'>07.04.2023 10:42:23 PM</span>
+<span class='badge badge-danger'>07.04.2023 10:42:48 PM</span>
+<span class='badge badge-default'>00:00:24:340</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -109,18 +109,17 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:03:54 PM</td>
+        <td>10:42:48 PM</td>
         <td>
           Test Failed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:03:54 PM</td>
+        <td>10:42:48 PM</td>
         <td>
-          <textarea readonly class="code-block">java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because "c" is null
-	at com.qa.utilities.ExcelUtility.getString(ExcelUtility.java:97)
-	at com.qa.testscripts.InventoryProductTest.deleteInventoryProducts(InventoryProductTest.java:25)
+          <textarea readonly class="code-block">java.lang.NullPointerException: Cannot invoke "com.qa.pages.Logout.logoutIcon()" because "this.log" is null
+	at com.qa.testscripts.LogoutTest.logoutTestPage(LogoutTest.java:29)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -143,9 +142,92 @@
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 	at org.testng.TestNG.runSuites(TestNG.java:1049)
 	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyLogoutTest</p>
+            <p class="text-sm">
+              <span>10:43:24 PM</span> / <span>00:00:00:002</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verifyLogoutTest</h5>
+<span class='badge badge-success'>07.04.2023 10:43:24 PM</span>
+<span class='badge badge-danger'>07.04.2023 10:43:24 PM</span>
+<span class='badge badge-default'>00:00:00:002</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:43:24 PM</td>
+        <td>
+          Test Failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:43:24 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.NullPointerException: Cannot invoke "com.qa.pages.Logout.logoutSuccessMsg()" because "this.log" is null
+	at com.qa.testscripts.LogoutTest.verifyLogoutTest(LogoutTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 </textarea>
           
         </td>
@@ -175,15 +257,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-danger'>2</span>
 </span>
 <p class="name">java.lang.NullPointerException</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>java.lang.NullPointerException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -196,9 +278,16 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>21:03:43 PM</td>
+<td>22:42:23 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>deleteInventoryProducts</a>
+<a href="#" class="linked" test-id='1' id='1'>logoutTestPage</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:43:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>verifyLogoutTest</a>
 </td>
 </tr>
 </tbody>
@@ -218,13 +307,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 3, 2023 09:03:15 PM</h3>
+<h3>Jul 4, 2023 10:41:22 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 3, 2023 09:03:56 PM</h3>
+<h3>Jul 4, 2023 10:43:25 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -236,7 +325,7 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>1</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -257,7 +346,7 @@
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> tests failed,
+<small data-tooltip='100%'><b>2</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -277,7 +366,7 @@
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='100%'><b>2</b> events failed,
+<small data-tooltip='100%'><b>4</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -294,7 +383,7 @@
 </div></div>
 <script>
 var timeline = {
-"deleteInventoryProducts":11.759
+"logoutTestPage":24.34,"verifyLogoutTest":0.002
 };
 </script>
 <div class="row">
@@ -322,7 +411,7 @@ var timeline = {
 var statusGroup = {
 parentCount: 5,
 passParent: 0,
-failParent: 1,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -339,7 +428,7 @@ skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 passEvents: 0,
-failEvents: 2,
+failEvents: 4,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

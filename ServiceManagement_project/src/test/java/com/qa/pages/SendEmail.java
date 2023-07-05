@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.qa.utilities.ExcelUtility;
 import com.qa.utilities.PageUtility;
+import com.qa.utilities.WaitUtility;
 
 public class SendEmail {
 
@@ -34,7 +35,7 @@ public class SendEmail {
 			page.enterText(subject, "subject1");
 			String textarea=ExcelUtility.getString(1, 37, System.getProperty("user.dir")+"constants.Constant.TESTDATAFILE", "testSheet");
 			page.enterText(sendemailmsg, textarea);
-
+			WaitUtility.waitForElement(driver, sendbutton);
 			page.clickOnElement(sendbutton);
 
 

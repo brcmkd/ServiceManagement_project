@@ -24,8 +24,9 @@ public class Logout {
 	
 	public void logoutIcon()
 	{ 
-		
+		WaitUtility.waitForElement(driver, joejacob);
    		page.clickOnElement(joejacob);
+   		WaitUtility.waitForElement(driver, signout);
 		page.clickOnElement(signout);
 	
 	}

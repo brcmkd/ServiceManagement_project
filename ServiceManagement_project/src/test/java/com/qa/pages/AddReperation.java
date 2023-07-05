@@ -102,9 +102,13 @@ public class AddReperation {
 	page.enterText(additem, value);
 	}
 	
-	public void addDate(Integer value)
+	public void addPurDate(String value)
 	{
 		page.clickOnElement(purchasedate);
+	}
+	public void addExDate(String value)
+	{
+		
 		page.clickOnElement(expectedclosedate);
 	}
 	public void acesories(String value)
